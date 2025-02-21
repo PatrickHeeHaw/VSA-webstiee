@@ -1,0 +1,38 @@
+/* Tablet and smaller desktops */
+@media (max-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 2rem 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+}   

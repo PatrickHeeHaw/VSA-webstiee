@@ -43,12 +43,42 @@ nav a:hover {
 }
 
 header {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/images/hero-background.jpg');
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+    padding: 20px; /* Add some padding */
+    background-color: #f4f4f4; /* Optional: Add a background color */
+    text-align: center; /* Center text */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/Interns2023.JPEG');
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
     padding: 4rem 2rem;
+}
+
+/* Style for the image */
+.header-image {
+    width: 100px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add space between the image and text */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+/* Style for the header content (title and description) */
+.header-content {
+    max-width: 600px; /* Limit the width of the text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* Stack image and text vertically on small screens */
+    }
+    .header-image {
+        margin-right: 0; /* Remove margin on small screens */
+        margin-bottom: 10px; /* Add space below the image */
+    }
 }
 
 main {

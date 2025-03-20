@@ -48,3 +48,8 @@ images.forEach((image, index) => {
     slide.appendChild(img);
     slideshowContainer.appendChild(slide);
 });
+
+
+
+
+

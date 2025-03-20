@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #2c3e50;
+    --primary-color: hsl(43, 65%, 82%);;
     --accent-color: hsl(122, 21%, 49%);
     --text-color: #333;
     --background-color: #fff;
@@ -46,7 +46,7 @@ nav a:hover {
 .slideshow-header {
     position: relative;
     overflow: hidden;
-    padding: 100px 20px;
+    padding: 300px 30px;
     text-align: center;
     color: white;
 }
@@ -86,16 +86,7 @@ nav a:hover {
 }
 
 /* Semi-transparent overlay for better text readability */
-.slideshow-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
+
 
 main {
     max-width: 1200px;
@@ -150,4 +141,65 @@ footer {
     .slideshow-header {
         padding: 60px 20px;
     }
+}
+
+/* Events page styling */
+.calendar-section {
+    padding: 2rem 0;
+}
+
+.events {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.event-item {
+    border-left: 4px solid var(--accent-color);
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 0 8px 8px 0;
+    box-shadow: var(--card-shadow);
+}
+
+.event-date {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.event-time {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.event-title {
+    margin: 0.5rem 0;
+    color: var(--accent-color);
+}
+
+.event-description {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.event-location {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.error {
+    color: #e74c3c;
+    padding: 1rem;
+    border-left: 4px solid #e74c3c;
+    background-color: #fadbd8;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Full calendar container */
+#full-calendar {
+    margin-top: 2rem;
+    width: 100%;
 }

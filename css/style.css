@@ -143,63 +143,13 @@ footer {
     }
 }
 
-/* Events page styling */
-.calendar-section {
-    padding: 2rem 0;
-}
-
-.events {
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0;
-}
-
-.event-item {
-    border-left: 4px solid var(--accent-color);
-    padding: 1rem 1.5rem;
-    margin-bottom: 1.5rem;
-    background-color: #f9f9f9;
-    border-radius: 0 8px 8px 0;
-    box-shadow: var(--card-shadow);
-}
-
-.event-date {
-    font-weight: bold;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-}
-
-.event-time {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 0.5rem;
-}
-
-.event-title {
-    margin: 0.5rem 0;
-    color: var(--accent-color);
-}
-
-.event-description {
-    margin: 0.5rem 0;
-    font-size: 0.95rem;
-}
-
-.event-location {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-}
-
-.error {
-    color: #e74c3c;
+.event{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
     padding: 1rem;
-    border-left: 4px solid #e74c3c;
-    background-color: #fadbd8;
-    border-radius: 0 8px 8px 0;
-}
-
-/* Full calendar container */
-#full-calendar {
-    margin-top: 2rem;
-    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
 }

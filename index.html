@@ -39,6 +39,15 @@
                 <p>Explore opportunities beyond the classroom.</p>
                 <a href="pages/about.html#student-life" class="button">Explore</a>
             </div>
+            <!-- Add this section to your main content -->
+<section class="instagram-feed">
+    <h2>Follow Us on Instagram</h2>
+    <p>Stay connected with our latest activities and events!</p>
+    <div class="instagram-container" id="instagram-container">
+        <!-- Instagram feed will be loaded here -->
+        <p class="loading-text">Loading recent photos...</p>
+    </div>
+</section>
         </section>
 
         <section>
@@ -52,5 +61,31 @@
         <p>123 Education Street | City, State 12345</p>
     </footer>
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simple Instagram feed loader
+            const instagramContainer = document.getElementById('instagram-container');
+            
+            // Replace 'vsaou' with your actual Instagram username
+            const instagramUsername = 'vsaou';
+            
+            // Load Instagram embed
+            const iframe = document.createElement('iframe');
+            iframe.setAttribute('src', `https://www.instagram.com/embed.js#${instagramUsername}`);
+            iframe.setAttribute('class', 'instagram-iframe');
+            iframe.setAttribute('loading', 'lazy');
+            iframe.setAttribute('allowtransparency', 'true');
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('scrolling', 'no');
+            iframe.style.width = '100%';
+            iframe.style.height = '500px';
+            iframe.style.border = 'none';
+            iframe.style.overflow = 'hidden';
+            
+            // Replace loading message with iframe
+            instagramContainer.innerHTML = '';
+            instagramContainer.appendChild(iframe);
+        });
+    </script>
 </body>
 </html>

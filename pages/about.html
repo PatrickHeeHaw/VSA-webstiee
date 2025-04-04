@@ -3,45 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Events</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
-    <script src="https://apis.google.com/js.api.js"></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>      
-            <li><a href="about.html">About</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="contact.html">Connect</a></li>
-        </ul>
-    </nav>
 
-    <header>
-        <h1>About Me</h1>
+    <header class="logo-header">
+        <a href="../index.html">
+            <img src="../assets/V_S_A_3.webp" alt="VSA Logo" class="logo-image">
+        </a>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>      
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html" class="active">Connect</a></li>
+            </ul>
+        </nav>
     </header>
-
     <main>
-        <section>       
-            <h2>VSA stuff</h2>
-            <p>Welcome to the Vietnamse Student Assocation website</p>
+        <h2>Future Events</h2>
+        <section class="Events">
+            <div class="event">
+                <h2>Mar 25</h2>
+                <p>Bake Sale</p>
+            </div>
+            <div class="event">
+                <h2>Apr 1</h2>
+                <p>General Meeting</p>
+            </div>
+            <div class="event">
+                <h2>Apr 2</h2>
+                <p>All You Can Eat Banh Mi</p>
+            </div>
+            <div class="event">
+                <h2>Apr 11</h2>
+                <p>Elections</p>
         </section>
-        <section>
-            <h2>Background</h2>
-            <p>[Write about your background here]</p>
-        </section>
-        <section>
-            <h2>Hobbies</h2>
-            <p>[Write about your hobbies here]</p>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <p>You can reach me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <section class="calendar-section">
+            <h2>Add Our Google Calender</h2>
+            <iframe src="https://calendar.google.com/calendar/embed?src=e366d0fec202935c4650c02cd1c28ef61c4035ba00942a16efdce869d2aa9b05%40group.calendar.google.com&ctz=America%2FChicago" 
+                src=YOUR_CALENDAR_ID
+                &color=%23039BE5
+                &showTitle=1
+                &showNav=1
+                &showDate=1
+                &showPrint=0
+                &showTabs=0
+                &showCalendars=0
+                &mode="MONTH"
+                style="border: 0" 
+                width="100%" 
+                height="600" 
+                frameborder="0" 
+                scrolling="no">
+</iframe></iframe>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 [Your Name]. All rights reserved.</p>
+        <p>&copy; 2024 OU Vietnamese Student Association. All rights reserved.</p>
     </footer>
+
+    <script src="../js/events.js"></script>
 </body>
 </html>

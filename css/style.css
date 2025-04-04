@@ -158,6 +158,12 @@ footer {
         padding: 60px 20px;
     }
 }
+@media (max-width: 768px) {
+    .page-header{
+        position: relative;
+        padding:20px 20px;
+    }
+}
 
 .event{
     display: flex;
@@ -386,4 +392,8 @@ footer {
     .social-card, .info-item {
         width: 100%;
     }
+}
+.page_header{
+    text-align: center;
+    margin: 20px 0;
 }

@@ -78,11 +78,15 @@ nav a.active{
 
 /* Slideshow header styles */
 .slideshow-header {
-    position: relative;
+    position: realative;
     overflow: hidden;
-    padding: 300px 30px;
+    min-height: 80vh;
+    padding: 50px 30px;
     text-align: center;
-    color: white;
+    color: white; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
 }
 
 .slideshow-container {
@@ -139,11 +143,12 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
+    margin-top: 3rem;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 3rem;
     margin-top: 2rem;
 }
@@ -151,7 +156,7 @@ main {
 .card {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 2.0rem;
     box-shadow: var(--card-shadow);
     transition: transform 0.3s ease;
 }

@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
     /* =========================================================
        3. SCROLLSPY LOGIC
        ========================================================= */
-    const sections = document.querySelectorAll('header[id], section[id]');
+    const sections = document.querySelectorAll('header[id], section[id], div[id]');
     const navLinks = document.querySelectorAll('.index-nav a.nav-link');
 
     function scrollSpy() {

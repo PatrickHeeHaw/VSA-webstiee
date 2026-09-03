@@ -987,3 +987,319 @@ footer {
     font-size: 0.95rem;
     margin-top: 20px;
 }
+
+/* =========================================================
+   13. OFFICER PORTAL MODAL & ADMIN STYLES
+   ========================================================= */
+
+.admin-portal-link {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.admin-portal-link:hover {
+    color: rgb(240, 240, 128);
+}
+
+.admin-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.admin-modal.hidden {
+    display: none !important;
+}
+
+.admin-modal-content {
+    background: #ffffff;
+    width: 100%;
+    max-width: 850px;
+    max-height: 90vh;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-modal-header {
+    background: #d62828;
+    color: white;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.admin-close-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.admin-close-btn:hover {
+    opacity: 1;
+}
+
+.admin-view {
+    padding: 25px;
+}
+
+.admin-view.hidden {
+    display: none !important;
+}
+
+.admin-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.admin-error-msg {
+    color: #d62828;
+    font-size: 0.9rem;
+    margin-top: 8px;
+    display: block;
+}
+
+.admin-error-msg.hidden {
+    display: none !important;
+}
+
+.admin-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-status-badge {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.admin-tabs {
+    display: flex;
+    gap: 10px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.admin-tab-btn {
+    padding: 10px 18px;
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid transparent;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.admin-tab-btn:hover {
+    color: #d62828;
+}
+
+.admin-tab-btn.active {
+    border-color: #d62828;
+    color: #d62828;
+}
+
+.admin-tab-content {
+    display: none;
+}
+
+.admin-tab-content.active {
+    display: block;
+}
+
+.admin-tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.admin-tab-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.admin-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.admin-form-grid .full-width {
+    grid-column: 1 / -1;
+}
+
+.admin-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.admin-item-card {
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.admin-item-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.admin-item-fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.admin-btn-primary {
+    background: #d62828;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s ease;
+}
+
+.admin-btn-primary:hover {
+    background: #b51f1f;
+}
+
+.admin-btn-outline {
+    background: transparent;
+    border: 1px solid #ccc;
+    color: #555;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admin-btn-outline:hover {
+    background: #f0f0f0;
+}
+
+.admin-btn-small {
+    background: #003049;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.admin-btn-small:hover {
+    background: #002133;
+}
+
+.admin-btn-delete {
+    background: #ffeded;
+    color: #d62828;
+    border: 1px solid #ffcdd2;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.admin-btn-delete:hover {
+    background: #d62828;
+    color: white;
+}
+
+.admin-footer-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.admin-btn-save {
+    flex: 2;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.admin-btn-save:hover {
+    background: #1b5e20;
+}
+
+.admin-btn-reset {
+    flex: 1;
+    background: #f5f5f5;
+    color: #666;
+    border: 1px solid #ccc;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admin-btn-reset:hover {
+    background: #e0e0e0;
+    color: #333;
+}
